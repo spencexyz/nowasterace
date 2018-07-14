@@ -1,6 +1,11 @@
 <header class="c-page__header">
   <h1>{{ site.title}}</h1>
-  <h1><code>{{ site.description }}</code></h1>
+  <code>{{ site.description }}</code>
+  {% if page.title == 'Home' %}
+    <a class="button header-cta" href="/registration">Sign me up!</a>
+  {% else %}
+    <a class="home-button" href="/"> < Home</a>
+  {% endif %}
 <!--   <p>
     <a href="{{ "/" | prepend: site.baseurl }}">Home</a><span
           class="u-separate"></span> <a href="{{ "/projects/" | prepend:
