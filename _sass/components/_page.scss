@@ -50,6 +50,38 @@
     }
 }
 
+.contact-page {
+  h2 {
+    @include fs--heading-2;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 4rem;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid #B0BEC5;
+    font-size: 14px;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #submit {
+    width: 100%;
+    margin-top: 35px;
+  }
+}
+
 .home-page {
   h1 {
     margin-bottom: 2.5rem; // 25px
